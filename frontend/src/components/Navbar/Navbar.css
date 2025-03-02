@@ -1,0 +1,174 @@
+*{
+    margin:0;
+    padding:0;
+}
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    padding:16px;
+    box-shadow: 1px 1px 2px black;
+}
+.navlogo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.navlogo p{
+    color: black;
+    font-size: 2rem;
+    font-weight: 600;
+}
+.navmenu{
+    display: flex;
+    align-items:center;
+    list-style: none;
+    gap:50px;
+    font-size: medium;
+    font-weight: 500;
+}
+.navmenu li{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3px;
+    cursor: pointer;
+}
+.navmenu hr{
+    border: none;
+    width: 80%;
+    height: 3px;
+    border-radius: 10px;
+    background-color: red;
+}
+.navlogincart{
+    display: flex;
+    align-items: center;
+    gap: 45px;
+}
+.navlogincart button{
+    width: 157px;
+    height:57px;
+    outline: none;
+    border: 1px solid black;
+    border-radius: 75px;
+    color: black;
+    font-size: 20px;
+    font-weight: 500;
+    background-color: aliceblue;
+    cursor: pointer;
+}
+.navlogincart button:hover{
+    background-color: aquamarine;
+}
+.navlogincount{
+     width:22px;
+     height:22px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin-top: -35px;
+     margin-left: -55px;
+     border-radius: 11px;
+     font-size: 14px;
+    background-color: red;
+    color: white;
+}
+.navdropdown{
+    display: none;
+}
+@media(max-width:1280px){
+    .navbar{
+        padding: 12px 50px;
+    }
+    .navlogo img{
+        width: 40px;
+    }
+    .navlogo p{
+        font-size: 25px;
+    }
+    .navmenu{
+        gap: 30px;
+        font-size: 15px;
+    }
+    .navlogincart{
+        gap: 30px;
+    }
+    .navlogincart button{
+        width: 125px;
+        height: 45px;
+        font-size: 15px;
+    }
+    .navlogincount{
+        margin-left: -40px;
+        font-size: 12px;
+    }
+}
+@media(max-width:1024px){
+    .navbar{
+        padding: 12px 30px;
+    }
+    .navmenu{
+        gap: 25px;
+        font-size: 14px;
+    }
+    .navlogincart button{
+        width: 80px;
+        height: 35px;
+        font-size: 14px;
+    }
+    .navlogincart img{
+        width: 30px;
+    }
+    .navlogincount{
+        width:18px ;
+        height: 18px;
+    }
+}
+@media(max-width:800px){
+    .navbar{
+        padding: 10px 0px;
+    }
+    .navdropdown{
+        display: block;
+        width: 30px;
+        rotate: -90deg;
+        transition: 0.5s;
+    }
+    .navmenu{
+        display: none;
+        height: 80px;
+        width: 100%;
+        position:absolute;
+        background: white;
+        justify-content: center;
+        top: 50px;
+    }
+    .nav-menu-visible{
+        display: flex;
+    }
+    .navdropdown.open{
+        transform: rotate(90deg);
+    }
+    
+}
+@media(max-width:500px){
+    .navbar{
+        width: 8px 0px;
+        gap: 0;
+    }
+    .navlogo{
+        transform: scale(0.8);
+    }
+    .navmenu{
+        height: 70px;
+        top: 50px;
+    }
+    .navlogincart{
+        transform: scale(0.8);
+    }
+}
+.image{
+    width: 70px;
+    height: fit-content;
+}

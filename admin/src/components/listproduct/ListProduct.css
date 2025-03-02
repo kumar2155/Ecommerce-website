@@ -1,0 +1,36 @@
+.listproduct{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    height: 740px;
+    padding: 10px 100px;
+    margin: 20px;
+    border-radius: 6px;
+    background-color: white;
+}
+.listproductformatmain{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr 1fr 1fr 1fr;
+    gap: 110px;
+    width: 100%;
+    padding: 20px 10px;
+    color: #454545;
+    font-size: 15px;
+    font-weight: 600;
+}
+.listproductmain{
+    align-items: center;
+    font-weight: 500;
+}
+.listproductformatmainimg{
+    height: 80px;
+    width: 80px;
+}
+.listproductremoveicon{
+    cursor: pointer;
+    margin: auto;
+}
+.listproductallproducts{
+    overflow-y:auto;
+}
