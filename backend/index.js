@@ -244,7 +244,8 @@ app.post("/addtocart", fetchuser, async (req, res) => {
     { _id: req.user.id },
     { cartdata: userdata.cartdata }
   );
-  res.send("added");
+  console.log("item added")
+  res.json({ message: "Item added to cart" });
 });
 
 //create endpoint for removing cartdata
@@ -258,6 +259,7 @@ app.post("/removefromcart", fetchuser, async (req, res) => {
     { cartdata: userdata.cartdata }
   );
   res.send("added");
+  res.json({ message: "Item removed to cart" });
 });
 
 //create endpoint for get cartdata
